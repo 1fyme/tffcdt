@@ -92,7 +92,7 @@
 			<p><a href="index.php">Return to tracker</a> <a href="messages.php">Recent Messages</a></p>
 		</div>
 		<?php
-			require 'simple_html_dom.php';
+			require '../../assets/simple_html_dom.php';
 			$html = file_get_html('http://www.extra-life.org/index.cfm?fuseaction=widgets.300x250thermo&participantID=147687');
 			$html3 = file_get_html('http://www.extra-life.org/index.cfm?fuseaction=widgets.300x250thermo&participantID=147687');
 			$html2 = file_get_html('http://www.extra-life.org/index.cfm?fuseaction=donorDrive.participantDonations&participantID=147687');
