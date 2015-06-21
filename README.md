@@ -15,5 +15,5 @@ Using simple_html_dom.php, we can get the entire "strong" tag including the text
 We can refresh the tracker and pull the Extra Life website again to check for changes by comparing the fourth "strong" HTML tag and the "recent.html" file, by using comparison operators in PHP.
 If there's a difference, then something has changed and we can display an alert on the web page.
 
-### Demo
+## Demo
 http://104.236.186.206/template.php
