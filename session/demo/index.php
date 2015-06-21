@@ -46,23 +46,23 @@
 				}
 				div.newDonation {	
 					background-image: url('../../assets/doodle_anim.gif');
-    				background-repeat: no-repeat;
-    				display: block;
+    					background-repeat: no-repeat;
+    					display: block;
    					min-height: 250px;
 				}
 				h2.newDonationText {
-    				padding-top: 60px;
-    				padding-left: 250px;
+    					padding-top: 60px;
+    					padding-left: 250px;
 					text-shadow: 0px 0px 1px #000, 0px 0px 2px #000, 0px 0px 3px #000, 
 					0px 0px 4px #000, 0px 0px 5px #000;
    				}
-    			p.newDonationText, p.newDonationMessage {
-    				padding-left: 250px;
+    				p.newDonationText, p.newDonationMessage {
+    					padding-left: 250px;
 					text-shadow: 0px 0px 1px #000, 0px 0px 2px #000, 0px 0px 3px #000, 
 					0px 0px 4px #000, 0px 0px 5px #000;
-    			}
-    			div#goal {
-    				top: 8px;
+    				}
+    				div#goal {
+    					top: 8px;
 				}
 				div.recentDonations, div.donationAlert, div.recentMessage, div.thermo {
 					border: 1px solid #fff;
@@ -227,7 +227,7 @@
 				// If the recent donation AND recent message does not match 
 				// what is stored in recent.html & recentmessage.html 
 				if (strcmp($recent, $recentstr) !== 0 && strcmp($recmesfile, $recentmessage) !== 0) {
-		  		echo "<div class='container'><div class='newDonation'><h2 class='newDonationText'>NEW DONATION!</h1><audio autoplay src='ding.mp3'></audio>";
+		  		echo "<div class='container'><div class='newDonation'><h2 class='newDonationText'>NEW DONATION!</h1><audio autoplay src='../../assets/ding.mp3'></audio>";
 				echo "<p class='newDonationText'>".$recent."</p>";
     			fclose($recentsto);
    				$recentsto = fopen("recent.html", "w") or die("Unable to open file!");
@@ -240,7 +240,7 @@
 				}
 				// SCENARIO 2
 				if (strcmp($recent, $recentstr) !== 0 && strcmp($recmesfile, $recentmessage) == 0) {
-		 	 	echo "<div class='container'><div class='newDonation'><h2 class='newDonationText'>NEW DONATION!</h1><audio autoplay src='ding.mp3'></audio>";
+		 	 	echo "<div class='container'><div class='newDonation'><h2 class='newDonationText'>NEW DONATION!</h1><audio autoplay src='../../assets/ding.mp3'></audio>";
 				echo "<p class='newDonationText'>".$recent."</p>";
     			fclose($recentsto);
    				$recentsto = fopen("recent.html", "w") or die("Unable to open file!");
@@ -254,7 +254,7 @@
 				}
 				// SCENARIO 3
 				if (strcmp($recent, $recentstr) == 0 && strcmp($recmesfile, $recentmessage) !== 0) {
-		  		echo "<div class='container'><div class='newDonation'><h2 class='newDonationText'>NEW DONATION!</h1><audio autoplay src='ding.mp3'></audio>";
+		  		echo "<div class='container'><div class='newDonation'><h2 class='newDonationText'>NEW DONATION!</h1><audio autoplay src='../../assets/ding.mp3'></audio>";
 				echo "<p class='newDonationText'>".$recent."</p>";
 
 				// The donation alert would be the same.
