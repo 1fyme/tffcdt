@@ -224,8 +224,9 @@
 			<!-- There are three different ways to check for a new donation. -->
 			<?php
 				
-				// If the recent donation AND recent message does not match 
-				// what is stored in recent.html & recentmessage.html 
+				// CASE 1
+				// If the recent donation AND recent message (from the Extra Life website)
+				// does not match what is stored in recent.html & recentmessage.html 
 				if (strcmp($recent, $recentstr) !== 0 && strcmp($recmesfile, $recentmessage) !== 0) {
 		  		echo "<div class='container'><div class='newDonation'><h2 class='newDonationText'>NEW DONATION!</h1><audio autoplay src='../../assets/ding.mp3'></audio>";
 				echo "<p class='newDonationText'>".$recent."</p>";
@@ -238,7 +239,10 @@
    				fwrite($recentmesto, $recentmessage);
   				fclose($recentmesto);
 				}
-				// SCENARIO 2
+				
+				// CASE 2
+				// If the recent donation does not match what is stored in recent.html,
+				// but the messages are both blank or identical.
 				if (strcmp($recent, $recentstr) !== 0 && strcmp($recmesfile, $recentmessage) == 0) {
 		 	 	echo "<div class='container'><div class='newDonation'><h2 class='newDonationText'>NEW DONATION!</h1><audio autoplay src='../../assets/ding.mp3'></audio>";
 				echo "<p class='newDonationText'>".$recent."</p>";
@@ -246,13 +250,17 @@
    				$recentsto = fopen("recent.html", "w") or die("Unable to open file!");
    				fwrite($recentsto, $recent);
   				fclose($recentsto);
+				
 				// There is no new message to be displayed.
    					// echo "<p class='newDonationMessage'>".$recentmessage."</div></div>";
    					// $recentmesto = fopen("recentmessage.html", "w") or die("Unable to open file!");
    					// fwrite($recentmesto, $recentmessage);
   					// fclose($recentmesto);
 				}
-				// SCENARIO 3
+				
+				// CASE 3
+				// If someone happens to donate the same amount, but leaves a different message,
+				// the tracker should be able to detect it.
 				if (strcmp($recent, $recentstr) == 0 && strcmp($recmesfile, $recentmessage) !== 0) {
 		  		echo "<div class='container'><div class='newDonation'><h2 class='newDonationText'>NEW DONATION!</h1><audio autoplay src='../../assets/ding.mp3'></audio>";
 				echo "<p class='newDonationText'>".$recent."</p>";
@@ -264,6 +272,7 @@
   					// fclose($recentsto);
 
 				// The donation message would be different.
+				
    					echo "<p class='newDonationMessage'>".$recentmessage."</div></div>";
    					$recentmesto = fopen("recentmessage.html", "w") or die("Unable to open file!");
    					fwrite($recentmesto, $recentmessage);
@@ -271,6 +280,8 @@
 				}
 		?>
 		</div>	
+		
+		<!-- Recent Donations -->
 		<?php
 			echo "<div class='recentDonations'>";
 			echo "<h2>Recent donations:</h2>";
