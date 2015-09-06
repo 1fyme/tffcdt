@@ -3,8 +3,8 @@
 
 
   <!-- This (notification.php) is designed to work with browser source plugins in Open Broadcaster Software -->
-  
-  
+
+
 	<head>
 		<!-- Load jquery -->
 		<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
@@ -114,7 +114,7 @@
 //			echo "Got simple_html_dom.php! Thanks!";
 
 			// Get html data from Extra Life's website
-			$html = file_get_html('http://www.extra-life.org/index.cfm?fuseaction=donorDrive.participantDonations&participantID=148534');
+			$html = file_get_html('http://www.extra-life.org/index.cfm?fuseaction=donorDrive.participantDonations&participantID=######');
 
 //			echo "<br>Extra Life website loaded!";
 
