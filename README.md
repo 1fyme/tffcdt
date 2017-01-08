@@ -18,5 +18,5 @@ If there's a difference, then something has changed and we can display an alert 
 ## Demo
 A snippet from TFFC's June 2015 charity live-stream can be viewed [here](https://youtu.be/cbf0uLHxAlI).
 
-## TFFC Website
-https://tffcofficial.org
+## TFFC Twitch Channel
+https://www.twitch.tv/tffcofficial
