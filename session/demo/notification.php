@@ -7,7 +7,7 @@
 
 	<head>
 		<!-- Load jquery -->
-		<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+		<script src="//code.jquery.com/jquery-3.1.1.min.js"></script>
 
 
 		<!-- Get the stylesheet from Extra Life's website for the thermometer -->
