@@ -2,7 +2,7 @@
 <html>
 	<head>
 		<link rel="stylesheet" href="http://www.extra-life.org/resources/css/widgets/300x250thermo/widget_300x250thermo.css?v=42150.6842014" type="text/css" />
-		<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+		<script src="//code.jquery.com/jquery-3.1.1.min.js"></script>
 		<script src="jquery.storage.js"></script>
 		<!--[if IE 6]>
 		<link rel="stylesheet" href="http://www.extra-life.org/resources/css/widgets/300x250thermo/widget_300x250thermo_ie6.css?v=42150.6842014" type="text/css" />
