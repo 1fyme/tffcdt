@@ -5,7 +5,7 @@ Tffcdt uses [simple_html_dom.php](http://simplehtmldom.sourceforge.net/) to extr
 The information is then written into HTML files that is used for comparing and detecting differences between the HTML files and changes in Extra Life's website. 
 Because these files are saved on the same server as tffcdt, different "access sessions" should be created for each user. 
 
-This was created in about a week, in preparation for TFFC's 48-hour June 2015 charity-fundraising livestream. 
+This was created in about a week, in preparation for TFFC's 48-hour June 2015 charity-fundraising live-stream. 
 
 ## How it Works
 We need to tell the tracker how the donations page is outlined in the HTML of Extra Life's website.
