@@ -102,7 +102,7 @@
 		<meta http-equiv="refresh" content="50">
 
 
-		<title>TFFC's Extra Life Donation Tracker</title>
+		<title>1Fyme's Extra Life Donation Tracker</title>
 	</head>
 	<body>
 
@@ -286,8 +286,8 @@
 			//echo "<h2>Most recent message:</h2>".$recentmessage;
 			//echo "</div>";
 		?>
-		<!-- <div class="footer">
-			<p>TFFC's Extra Life Donation Tracker</p>
-		</div> -->
+		<div class="footer">
+			<p>1Fyme's Extra Life Donation Tracker</p>
+		</div>
 	</body>
 </html>

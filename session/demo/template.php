@@ -81,7 +81,7 @@
 			$(document).ready(main);
 		</script>
 		<meta http-equiv="refresh" content="30">
-		<title>TFFC's Extra Life Donation Tracker Template for Overlays</title>
+		<title>1Fyme's Extra Life Donation Tracker Template for Overlays</title>
 	</head>
 	<body>
 		<div class="controlpanel">

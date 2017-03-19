@@ -97,7 +97,7 @@
 		<meta http-equiv="refresh" content="30">
 			
 				
-		<title>TFFC's Extra Life Donation Tracker</title>
+		<title>1Fyme's Extra Life Donation Tracker</title>
 	</head>
 	<body>
 		<div class="controlpanel">

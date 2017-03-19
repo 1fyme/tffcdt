@@ -35,7 +35,7 @@
 			}
 		</style>
 		<meta http-equiv="refresh" content="120">
-		<title>Messages | TFFC Donation Tracker</title>
+		<title>Messages | 1Fyme's Extra Life Donation Tracker</title>
 	</head>
 	<body>
 		<div class="controlpanel">
@@ -52,6 +52,6 @@
 		<small>
 			<p>This updates every 2 minutes to grab data from Extra Life's website.</p>
 		</small>
-		<p>TFFC's Extra Life Donation Tracker</p>
+		<p>1Fyme's Extra Life Donation Tracker</p>
 	</body>
 </html>
