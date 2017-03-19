@@ -89,9 +89,9 @@
 		</div>
 		<?php
 			require '../../assets/simple_html_dom.php';
-			$html = file_get_html('http://www.extra-life.org/index.cfm?fuseaction=widgets.300x250thermo&participantID=147687');
-			$html3 = file_get_html('http://www.extra-life.org/index.cfm?fuseaction=widgets.300x250thermo&participantID=147687');
-			$html2 = file_get_html('http://www.extra-life.org/index.cfm?fuseaction=donorDrive.participantDonations&participantID=147687');
+			$html = file_get_html('http://www.extra-life.org/index.cfm?fuseaction=widgets.300x250thermo&participantID=######');
+			$html3 = file_get_html('http://www.extra-life.org/index.cfm?fuseaction=widgets.300x250thermo&participantID=######');
+			$html2 = file_get_html('http://www.extra-life.org/index.cfm?fuseaction=donorDrive.participantDonations&participantID=######');
 			$raised = $html->find('em', 0);
 			$goal = $html->find('em', 1);
 			echo "<h1>Raised: ".$raised."</h1>";
@@ -135,14 +135,11 @@
 			echo "</div>";
 		?>
 		<div class="note">
-			<p>Test examples are taken from 
-				<a href="http://www.extra-life.org/index.cfm?fuseaction=donorDrive.participant&participantID=147687">Benjamin Dominguez's Extra Life donations page.</a>
 				<br>This updates every thirty seconds to grab data from Extra Life's website.
 			</p>
 		</div>
 		<div class="footer">
-			<p>1FYME LABS</p>
-			<p>TFFC's Extra Life Donation Tracker version: 0.4</p>
+			<p>1Fyme's Extra Life Donation Tracker</p>
 		</div>
 	</body>
 </html>
