@@ -32,7 +32,7 @@
 					font-weight: normal;
 				}
 				body {
-					font-family: Arial, sans-serif;
+					font-family: sans-serif;
 					font-size: 22px;
 					-webkit-font-smoothing: antialiased;
 					-moz-osx-font-smoothing: grayscale;
@@ -80,7 +80,7 @@
 					margin-top: -2px;
 				}
 				div.note p, div.footer p {
-					font-family: Helvetica, Arial, sans-serif;
+					font-family: sans-serif;
 				}
 				div.note p {
 					font-size: 20px;

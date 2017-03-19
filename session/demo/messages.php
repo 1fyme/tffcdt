@@ -19,15 +19,11 @@
 		
 		<link rel="stylesheet" href="http://www.extra-life.org/themes/extralife2014/css/widgets.min.css?v=42150.6842014" type="text/css" />
 		<style>
-			@font-face {
-    			font-family: "Impress-BT";
-    			src: url(http://104.236.2.249/assets/impress-bt.ttf);
-			}
 			h1, h2 {
 				font-weight: normal;			
 			}
 			body {
-				font-family: "Impress-BT", Arial, sans-serif;
+				font-family: sans-serif;
 				font-size: 22px;
 				background:#000;
 				color:#fff;

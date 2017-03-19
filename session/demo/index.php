@@ -27,7 +27,7 @@
 					font-weight: normal;
 				}
 				body {
-					font-family: Arial, sans-serif;
+					font-family:sans-serif;
 					font-size: 22px;
 					background: #000;
 					color: #fff;
@@ -75,7 +75,7 @@
 					margin-top: -2px;
 				}
 				div.note p, div.footer p {
-					font-family: Helvetica, Arial, sans-serif;
+					font-family: sans-serif;
 				}
 				div.note p {
 					font-size: 20px;
@@ -109,7 +109,6 @@
 		<?php
 			// Use simple_html_dom.php
 			require '../../assets/simple_html_dom.php';
-			
 			// Get html data from Extra Life's website
 			$html = file_get_html('http://www.extra-life.org/index.cfm?fuseaction=widgets.300x250thermo&participantID=######');
 			$html3 = file_get_html('http://www.extra-life.org/index.cfm?fuseaction=widgets.300x250thermo&participantID=######');
@@ -148,9 +147,10 @@
 			
 			// Get the fourth <h1>
 			$group = $html2->find('h1', 4);
-			
+
 			// Get the third <strong>
 			$recent = $html2->find('strong', 3);
+			echo $recent;
 			// Get the fourth <strong>, and so on.
 			$recent2 = $html2->find('strong', 4);
 			$recent3 = $html2->find('strong', 5);
@@ -283,9 +283,9 @@
 		
 		<!-- Recent Donations -->
 		<?php
-			echo "<div class='recentDonations'>";
-			echo "<h2>Recent donations:</h2>";
-			echo $recent;
+		  echo "<div class='recentDonations'>";
+		  echo "<h2>Recent donations:</h2>";
+		  echo $recent;
 			echo "<br>".$recent2;
 			echo "<br>".$recent3;
 			echo "<br>".$recent4;
