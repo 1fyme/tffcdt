@@ -297,7 +297,7 @@
 			echo "</div>";
 		?>
 		<div class="footer">
-			<p>TFFC's Extra Life Donation Tracker</p>
+			<p>1Fyme's Extra Life Donation Tracker</p>
 		</div>
 	</body>
 </html>
