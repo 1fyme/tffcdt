@@ -43,7 +43,7 @@
 			</p>
 		</div>
 		<?php
-			require 'simple_html_dom.php';
+			require '../../assets/simple_html_dom.php';
 			$html = file_get_html('http://www.extra-life.org/index.cfm?fuseaction=donorDrive.participantDonations&participantID=######');
 			$messages= $html->find('table', 0);
 			echo $messages;
