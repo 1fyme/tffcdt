@@ -49,7 +49,7 @@
    					min-height: 250px;
 				}
 				div.newDonation {
-					background-image: url('../../assets/doodle_anim.gif');
+					background-image: url('../../assets/animation.gif');
     					background-repeat: no-repeat;
     					display: block;
    					min-height: 250px;

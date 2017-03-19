@@ -45,7 +45,7 @@
    					min-height: 250px;
 				}
 				div.newDonation {	
-					background-image: url('../../assets/doodle_anim.gif');
+					background-image: url('../../assets/animation.gif');
     					background-repeat: no-repeat;
     					display: block;
    					min-height: 250px;
@@ -114,8 +114,8 @@
 			$html3 = file_get_html('http://www.extra-life.org/index.cfm?fuseaction=widgets.300x250thermo&participantID=######');
 			$html2 = file_get_html('http://www.extra-life.org/index.cfm?fuseaction=donorDrive.participantDonations&participantID=######');
 			
-			// Get html files from server (we will use these files later)
-			$recentfile = file_get_html('recent.html');
+		  // Get html files from server (we will use these files late)
+		  $recentfile = file_get_html('recent.html');
 			$recentmesfile = file_get_html('recentmessage.html');
 			
 			// Find the first "em" tag from $html

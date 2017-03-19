@@ -38,7 +38,7 @@
 				background: #00ff00;
 			}
 			div.newDonation {
-				background-image: url('doodle_anim.gif');
+				background-image: url('animation.gif');
     			background-repeat: no-repeat;
     			display: block;
     			min-height: 250px;
