@@ -138,19 +138,19 @@
 				echo "<h1>Goal: ".$goal."</h1>";
 			}
 				
-			// Now let's get the thermometer from the website, by looking for the fourth 
+			// Now let's get the thermometer from the website, by looking for the fifth 
 			// <div>. We will use it later.
 			$thermo = $html3->find('div', 4);
 			
 			// Show the thermometer here
 			echo "<div class='thermo'>".$thermo."</div>";
 			
-			// Get the fourth <h1>
+			// Get the fifth <h1>
 			$group = $html2->find('h1', 4);
 
-			// Get the third <strong>
+			// Get the fourth <strong>
 			$recent = $html2->find('strong', 3);
-			// Get the fourth <strong>, and so on.
+			// Get the fifth <strong>, and so on.
 			$recent2 = $html2->find('strong', 4);
 			$recent3 = $html2->find('strong', 5);
 			$recent4 = $html2->find('strong', 6);

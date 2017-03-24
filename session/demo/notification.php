@@ -123,16 +123,16 @@
 			$recentmesfile = file_get_html('recentmessage.html');
 //			echo "<br>Temporary HTML files loaded!";
 
-			// Get the fourth <h1>
+			// Get the fifth <h1>
 			$group = $html->find('h1', 4);
-//			echo "<br>Got the fourth h1 from the website!";
-			// Get the third <strong>
+//			echo "<br>Got the fifth h1 from the website!";
+			// Get the fourth <strong>
 			// This should be the most recent donation.
 			$recent = $html->find('strong', 3);
 //			echo "<br>I now know the most recent donation! Thanks!";
 
 //			echo "<br>".$recent;
-			// Get the fourth <strong>, and so on.
+			// Get the fifth <strong>, and so on.
 			$recent2 = $html->find('strong', 4);
 			$recent3 = $html->find('strong', 5);
 			$recent4 = $html->find('strong', 6);
