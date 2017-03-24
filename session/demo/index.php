@@ -150,7 +150,6 @@
 
 			// Get the third <strong>
 			$recent = $html2->find('strong', 3);
-			echo $recent;
 			// Get the fourth <strong>, and so on.
 			$recent2 = $html2->find('strong', 4);
 			$recent3 = $html2->find('strong', 5);
@@ -163,7 +162,6 @@
 			
 			// I don't know why this is here.
 			$recentmes2 = $html2->find('em', 1);
-			
 			// Prepare the paths to these html files. 
 			// We will need these to check for changes on Extra Life's website.
 			$file_pathto_recent = "recent.html";
